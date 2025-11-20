@@ -1,0 +1,65 @@
+
+    body {
+        /* This applies a semi-transparent black overlay on top of your image.
+           You can adjust the `0.6` value (from 0.0 to 1.0) to make it more or less transparent. */
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/background-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /* Keeps the background image in place on scroll */
+        background-position: center; /* Centers the background image */
+    }
+    form {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1{
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 80px;
+    text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    fieldset {
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        margin:auto;
+        height: 450px;
+        background-color:rgba(66, 63, 63, 0.7);
+    }
+    legend {
+        /* padding: 0 10px; */
+        font-size: 100px;
+    }
+    input, button {
+        font-family: inherit; /* Ensures inputs and button use the form's font */
+        font-size: 16px; /* A more standard font size for inputs */
+        
+    }
+    .login-button{
+        display: inline-block; /* Allows padding and margins on the link */
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #fbda78; /* Swiggy's orange brand color */
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none; /* Removes the default underline from the link */
+        transition: background-color 0.3s;
+
+    }
+    .login-button:hover {
+        background-color: #e6c15c; /* Darker shade on hover */
+    }

@@ -1,0 +1,567 @@
+/* Minimalist Aesthetic Food Delivery Design */
+
+
+body {
+      height: 100%
+        display: flex;
+        flex-direction: column;
+        min-height: 100%; /* Make body at least the height of the viewport */
+        margin: 0; /* Remove default body margin */
+ }
+.main-content {
+        flex-grow: 1; /* Allows this element to grow and push the footer down */
+        padding-top: 100px; /* To offset for fixed navbar */
+}
+
+.navbar {
+        
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;  /* stays at the top */
+  top: 0;
+  left: 0;
+  color: black;
+  width: 100%;
+  z-index: 1000;
+  
+   /* Adds space on the left and right edges */
+  height: 100px; /* adjust as needed */
+}
+
+.logo{
+  margin:10px;
+  font-size: 1.2 rem;
+  font-weight: 400;
+  color: #2d2d2d;
+}
+
+.navbar-right {
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+   /* spacing between links */
+}
+
+.nav-item {
+  font-size: 1rem;
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 20px;
+}
+
+.nav-item:hover {
+  color:  #f87e1a; /* Swiggy accent color */
+}
+
+.cart {
+  position: sticky;
+  top:0px;
+
+}
+
+/* Container 
+.minimal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.minimal-container-narrow {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+Navigation 
+.minimal-nav {
+  background-color: #faf9f7;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e8e5e0;
+}
+
+.minimal-nav .minimal-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minimal-logo {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #2d2d2d;
+  text-transform: lowercase;
+}
+
+.minimal-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.minimal-nav-links a {
+  color: #2d2d2d;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.minimal-nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #8b9e7d;
+  transition: width 0.3s ease;
+}
+
+.minimal-nav-links a:hover::after {
+  width: 100%;
+}
+
+.minimal-nav-links a:hover {
+  color: #8b9e7d;
+}*/
+
+
+.home-1 {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  
+  background: linear-gradient(180deg, #faf9f7 0%, #89a593 100%);
+}
+
+
+.home-tagline {
+  font-size: 1.00rem;
+  letter-spacing: 3px;
+  color: #8b9e7d;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #2d2d2d;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.home-text {
+  font-size: 1.1rem;
+  color: #6b6b6b;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+/* Buttons */
+.btn-home {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #2d2d2d;
+  color: #faf9f7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 1px solid #2d2d2d;
+}
+
+.btn-home:hover {
+  background-color: transparent;
+  color: #2d2d2d;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 8rem 0;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #2d2d2d;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #8b9e7d;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.menu-card {
+  background: #faf9f7;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-image {
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-img {
+  background-image: url('images/burger.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.pizza-img {
+  background-image: url('images/pizza1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sushi-img {
+  background-image: url('images/sushi.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.salad-img {
+  background-image: url('images/salad.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.pasta-img {
+  background-image: url('images/pasta.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.drink-img {
+  background-image: url('images/drink.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.dessert-img {
+  background-image: url('images/dessert.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-content h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #2d2d2d;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #6b6b6b;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #2d2d2d;
+  font-weight: 400;
+}
+
+.link {
+  color: #8b9e7d;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.link:hover {
+  border-bottom: 1px solid #8b9e7d;
+}
+
+/* Philosophy Section */
+.philosophy-container {
+  padding: 8rem 0;
+  background-color: #faf9f7;
+}
+
+.philosophy-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2d2d2d;
+  margin-bottom: 5rem;
+  letter-spacing: -0.5px;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+}
+
+.philosophy-item {
+  text-align: center;
+}
+
+.number {
+  display: block;
+  font-size: 0.85rem;
+  color: #8b9e7d;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.philosophy-item h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+}
+
+.philosophy-item p {
+  font-size: 0.95rem;
+  color: #6b6b6b;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* Contact Section */
+.contact {
+  padding: 8rem 0;
+  background-color: #ffffff;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2d2d2d;
+  margin-bottom: 4rem;
+  letter-spacing: -0.5px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b6b6b;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-group input,
+.orm-group textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: #faf9f7;
+  border: 1px solid #e8e5e0;
+  color: #2d2d2d;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8b9e7d;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #2d2d2d;
+  color: #faf9f7;
+  border: none; /* To remove default button border */
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 0px 32px; /* Increased padding for better spacing */
+  width: 100%;
+  height:auto;
+  position: static;
+  bottom: 0;
+
+  text-align: right;
+  
+  
+}
+.company-section{
+  
+  gap: 40px; /* Adds space between the columns */
+}
+.footer-brand {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.footer-text{
+  font-size: 0.85rem;
+  color: #a8a8a8;
+  font-weight: 300;
+  text-align: left;
+}
+#footer-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 40px;
+  
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+.footer-column h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fbda78;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+
+/* Footer */
+/* .minimal-footer {
+  padding: 3rem 0;
+  background-color: #2d2d2d;
+  color: #faf9f7;
+}
+
+.minimal-footer-content {
+  text-align: center;
+}
+
+.minimal-footer-brand {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-transform: lowercase;
+}
+
+.minimal-footer-text {
+  font-size: 0.85rem;
+  color: #a8a8a8;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  /* .minimal-nav-links {
+    gap: 1.5rem;
+  } */
+
+  .section-title,
+  .philosophy-title,
+  .ontact-title {
+    font-size: 2rem;
+  }
+
+  
+  .philosophy-container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .menu-container,
+  .ontainer-narrow {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  /* .minimal-nav-links {
+    gap: 1rem;
+  } */
+
+  /* .minimal-nav-links a {
+    font-size: 0.85rem;
+  } */
+
+  /* .minimal-hero {
+    padding: 4rem 1rem;
+  }
+}  */
