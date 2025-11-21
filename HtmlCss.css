@@ -1,5 +1,3 @@
-/* Minimalist Aesthetic Food Delivery Design */
-
 
 body {
       height: 100%
@@ -63,77 +61,6 @@ body {
 
 }
 
-/* Container 
-.minimal-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.minimal-container-narrow {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-Navigation 
-.minimal-nav {
-  background-color: #faf9f7;
-  padding: 2rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid #e8e5e0;
-}
-
-.minimal-nav .minimal-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.minimal-logo {
-  font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #2d2d2d;
-  text-transform: lowercase;
-}
-
-.minimal-nav-links {
-  display: flex;
-  list-style: none;
-  gap: 3rem;
-}
-
-.minimal-nav-links a {
-  color: #2d2d2d;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-.minimal-nav-links a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: -4px;
-  left: 0;
-  background-color: #8b9e7d;
-  transition: width 0.3s ease;
-}
-
-.minimal-nav-links a:hover::after {
-  width: 100%;
-}
-
-.minimal-nav-links a:hover {
-  color: #8b9e7d;
-}*/
 
 
 .home-1 {
@@ -497,29 +424,6 @@ Navigation
 }
 
 
-/* Footer */
-/* .minimal-footer {
-  padding: 3rem 0;
-  background-color: #2d2d2d;
-  color: #faf9f7;
-}
-
-.minimal-footer-content {
-  text-align: center;
-}
-
-.minimal-footer-brand {
-  font-size: 1rem;
-  letter-spacing: 2px;
-  margin-bottom: 0.5rem;
-  text-transform: lowercase;
-}
-
-.minimal-footer-text {
-  font-size: 0.85rem;
-  color: #a8a8a8;
-  font-weight: 300;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -527,10 +431,7 @@ Navigation
     font-size: 2.5rem;
   }
 
-  /* .minimal-nav-links {
-    gap: 1.5rem;
-  } */
-
+ 
   .section-title,
   .philosophy-title,
   .ontact-title {
@@ -553,15 +454,4 @@ Navigation
     font-size: 2rem;
   }
 
-  /* .minimal-nav-links {
-    gap: 1rem;
-  } */
-
-  /* .minimal-nav-links a {
-    font-size: 0.85rem;
-  } */
-
-  /* .minimal-hero {
-    padding: 4rem 1rem;
-  }
-}  */
+  
