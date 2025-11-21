@@ -162,7 +162,8 @@ body {
 
 .card-image {
   height: 280px;
-  width: 280px;
+  width: 100%; /* Make image container flexible */
+  max-width: 280px; /* But not bigger than 280px */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -434,18 +435,18 @@ body {
  
   .section-title,
   .philosophy-title,
-  .ontact-title {
+  .contact-title {
     font-size: 2rem;
   }
 
+  .menu-container {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
   
   .philosophy-container{
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-  .menu-container,
-  .ontainer-narrow {
-    padding: 0 1.5rem;
   }
 }
 
